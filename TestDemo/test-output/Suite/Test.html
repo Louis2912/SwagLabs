@@ -1,0 +1,599 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>43/7/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 17 19:15:38 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>919 seconds (919387 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='saucelabs.Yourcart.TC_032()'><b>TC_032</b><br>Test class: saucelabs.Yourcart</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at saucelabs.Yourcart.TC_032(Yourcart.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1435700035", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1435700035'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:976)
+	at org.testng.Assert.assertEquals(Assert.java:1010)
+	at saucelabs.Yourcart.TC_032(Yourcart.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>saucelabs.Yourcart@1530c739</td></tr>
+<tr>
+<td title='saucelabs.Checkoutyourinfo.TC_43()'><b>TC_43</b><br>Test class: saucelabs.Checkoutyourinfo</td>
+<td><div><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-one.html] but found [https://www.saucedemo.com/checkout-step-two.html]
+	at saucelabs.Checkoutyourinfo.TC_43(Checkoutyourinfo.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1768342567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1768342567'><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-one.html] but found [https://www.saucedemo.com/checkout-step-two.html]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at saucelabs.Checkoutyourinfo.TC_43(Checkoutyourinfo.java:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>2</td>
+<td>saucelabs.Checkoutyourinfo@5b1669c0</td></tr>
+<tr>
+<td title='saucelabs.filteroption.TC_023()'><b>TC_023</b><br>Test class: saucelabs.filteroption</td>
+<td><div><pre>java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 6
+	at saucelabs.filteroption.TC_023(filteroption.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2002225203", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2002225203'><pre>java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 6
+	at saucelabs.filteroption.TC_023(filteroption.java:121)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>2</td>
+<td>saucelabs.filteroption@2e8c1c9b</td></tr>
+<tr>
+<td title='saucelabs.Checkoutyourinfo.TC_45()'><b>TC_45</b><br>Test class: saucelabs.Checkoutyourinfo</td>
+<td><div><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-one.html] but found [https://www.saucedemo.com/checkout-step-two.html]
+	at saucelabs.Checkoutyourinfo.TC_45(Checkoutyourinfo.java:103)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1041408981", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1041408981'><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-one.html] but found [https://www.saucedemo.com/checkout-step-two.html]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at saucelabs.Checkoutyourinfo.TC_45(Checkoutyourinfo.java:103)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>2</td>
+<td>saucelabs.Checkoutyourinfo@5b1669c0</td></tr>
+<tr>
+<td title='saucelabs.Yourcart.TC_036()'><b>TC_036</b><br>Test class: saucelabs.Yourcart</td>
+<td><div><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/cart.html] but found [https://www.saucedemo.com/checkout-step-one.html]
+	at saucelabs.Yourcart.TC_036(Yourcart.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace650775728", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace650775728'><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/cart.html] but found [https://www.saucedemo.com/checkout-step-one.html]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at saucelabs.Yourcart.TC_036(Yourcart.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>saucelabs.Yourcart@1530c739</td></tr>
+<tr>
+<td title='saucelabs.Checkoutyourinfo.TC_42()'><b>TC_42</b><br>Test class: saucelabs.Checkoutyourinfo</td>
+<td><div><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-one.html] but found [https://www.saucedemo.com/checkout-step-two.html]
+	at saucelabs.Checkoutyourinfo.TC_42(Checkoutyourinfo.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1646751932", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1646751932'><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-one.html] but found [https://www.saucedemo.com/checkout-step-two.html]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at saucelabs.Checkoutyourinfo.TC_42(Checkoutyourinfo.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>2</td>
+<td>saucelabs.Checkoutyourinfo@5b1669c0</td></tr>
+<tr>
+<td title='saucelabs.Checkoutyourinfo.TC_44()'><b>TC_44</b><br>Test class: saucelabs.Checkoutyourinfo</td>
+<td><div><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-one.html] but found [https://www.saucedemo.com/checkout-step-two.html]
+	at saucelabs.Checkoutyourinfo.TC_44(Checkoutyourinfo.java:94)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1995143476", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1995143476'><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-one.html] but found [https://www.saucedemo.com/checkout-step-two.html]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at saucelabs.Checkoutyourinfo.TC_44(Checkoutyourinfo.java:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>2</td>
+<td>saucelabs.Checkoutyourinfo@5b1669c0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='saucelabs.Loginfunctions.TC_003()'><b>TC_003</b><br>Test class: saucelabs.Loginfunctions</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.Loginfunctions@6892b3b6</td></tr>
+<tr>
+<td title='saucelabs.productdetailspage.TC_017()'><b>TC_017</b><br>Test class: saucelabs.productdetailspage</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.productdetailspage@76a4ebf2</td></tr>
+<tr>
+<td title='saucelabs.Checkoutyourinfo.TC_038()'><b>TC_038</b><br>Test class: saucelabs.Checkoutyourinfo</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.Checkoutyourinfo@5b1669c0</td></tr>
+<tr>
+<td title='saucelabs.Completepage.TC_048()'><b>TC_048</b><br>Test class: saucelabs.Completepage</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.Completepage@6e9175d8</td></tr>
+<tr>
+<td title='saucelabs.Loginfunctions.TC_009()'><b>TC_009</b><br>Test class: saucelabs.Loginfunctions</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.Loginfunctions@6892b3b6</td></tr>
+<tr>
+<td title='saucelabs.productdetailspage.TC_018()'><b>TC_018</b><br>Test class: saucelabs.productdetailspage</td>
+<td></td>
+<td>2</td>
+<td>saucelabs.productdetailspage@76a4ebf2</td></tr>
+<tr>
+<td title='saucelabs.menuoption.TC_026()'><b>TC_026</b><br>Test class: saucelabs.menuoption</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.menuoption@53fe15ff</td></tr>
+<tr>
+<td title='saucelabs.Socialmedia.TC_029()'><b>TC_029</b><br>Test class: saucelabs.Socialmedia</td>
+<td></td>
+<td>3</td>
+<td>saucelabs.Socialmedia@449a4f23</td></tr>
+<tr>
+<td title='saucelabs.productpage.TC_015()'><b>TC_015</b><br>Test class: saucelabs.productpage</td>
+<td></td>
+<td>3</td>
+<td>saucelabs.productpage@6e6f2380</td></tr>
+<tr>
+<td title='saucelabs.productpage.TC_010()'><b>TC_010</b><br>Test class: saucelabs.productpage</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.productpage@6e6f2380</td></tr>
+<tr>
+<td title='saucelabs.productdetailspage.TC_016()'><b>TC_016</b><br>Test class: saucelabs.productdetailspage</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.productdetailspage@76a4ebf2</td></tr>
+<tr>
+<td title='saucelabs.menuoption.TC_025()'><b>TC_025</b><br>Test class: saucelabs.menuoption</td>
+<td></td>
+<td>6</td>
+<td>saucelabs.menuoption@53fe15ff</td></tr>
+<tr>
+<td title='saucelabs.Loginfunctions.TC_006()'><b>TC_006</b><br>Test class: saucelabs.Loginfunctions</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.Loginfunctions@6892b3b6</td></tr>
+<tr>
+<td title='saucelabs.Overviewpage.TC_047()'><b>TC_047</b><br>Test class: saucelabs.Overviewpage</td>
+<td></td>
+<td>2</td>
+<td>saucelabs.Overviewpage@78e4deb0</td></tr>
+<tr>
+<td title='saucelabs.Loginfunctions.TC_008()'><b>TC_008</b><br>Test class: saucelabs.Loginfunctions</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.Loginfunctions@6892b3b6</td></tr>
+<tr>
+<td title='saucelabs.productpage.TC_012()'><b>TC_012</b><br>Test class: saucelabs.productpage</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.productpage@6e6f2380</td></tr>
+<tr>
+<td title='saucelabs.filteroption.TC_021()'><b>TC_021</b><br>Test class: saucelabs.filteroption</td>
+<td></td>
+<td>2</td>
+<td>saucelabs.filteroption@2e8c1c9b</td></tr>
+<tr>
+<td title='saucelabs.productpage.TC_011()'><b>TC_011</b><br>Test class: saucelabs.productpage</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.productpage@6e6f2380</td></tr>
+<tr>
+<td title='saucelabs.Loginpage.TC_001()'><b>TC_001</b><br>Test class: saucelabs.Loginpage</td>
+<td></td>
+<td>4</td>
+<td>saucelabs.Loginpage@70e9c95d</td></tr>
+<tr>
+<td title='saucelabs.Yourcart.TC_035()'><b>TC_035</b><br>Test class: saucelabs.Yourcart</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.Yourcart@1530c739</td></tr>
+<tr>
+<td title='saucelabs.Yourcart.TC_034()'><b>TC_034</b><br>Test class: saucelabs.Yourcart</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.Yourcart@1530c739</td></tr>
+<tr>
+<td title='saucelabs.Socialmedia.TC_030()'><b>TC_030</b><br>Test class: saucelabs.Socialmedia</td>
+<td></td>
+<td>3</td>
+<td>saucelabs.Socialmedia@449a4f23</td></tr>
+<tr>
+<td title='saucelabs.Checkoutyourinfo.TC_040()'><b>TC_040</b><br>Test class: saucelabs.Checkoutyourinfo</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.Checkoutyourinfo@5b1669c0</td></tr>
+<tr>
+<td title='saucelabs.Checkoutyourinfo.TC_46()'><b>TC_46</b><br>Test class: saucelabs.Checkoutyourinfo</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.Checkoutyourinfo@5b1669c0</td></tr>
+<tr>
+<td title='saucelabs.Yourcart.TC_033()'><b>TC_033</b><br>Test class: saucelabs.Yourcart</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.Yourcart@1530c739</td></tr>
+<tr>
+<td title='saucelabs.Checkoutyourinfo.TC_037()'><b>TC_037</b><br>Test class: saucelabs.Checkoutyourinfo</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.Checkoutyourinfo@5b1669c0</td></tr>
+<tr>
+<td title='saucelabs.menuoption.TC_028()'><b>TC_028</b><br>Test class: saucelabs.menuoption</td>
+<td></td>
+<td>2</td>
+<td>saucelabs.menuoption@53fe15ff</td></tr>
+<tr>
+<td title='saucelabs.Autologoutfunction.TC_050()'><b>TC_050</b><br>Test class: saucelabs.Autologoutfunction</td>
+<td></td>
+<td>600</td>
+<td>saucelabs.Autologoutfunction@7d0b7e3c</td></tr>
+<tr>
+<td title='saucelabs.filteroption.TC_019()'><b>TC_019</b><br>Test class: saucelabs.filteroption</td>
+<td></td>
+<td>2</td>
+<td>saucelabs.filteroption@2e8c1c9b</td></tr>
+<tr>
+<td title='saucelabs.Completepage.TC_049()'><b>TC_049</b><br>Test class: saucelabs.Completepage</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.Completepage@6e9175d8</td></tr>
+<tr>
+<td title='saucelabs.Checkoutyourinfo.TC_039()'><b>TC_039</b><br>Test class: saucelabs.Checkoutyourinfo</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.Checkoutyourinfo@5b1669c0</td></tr>
+<tr>
+<td title='saucelabs.Loginfunctions.TC_007()'><b>TC_007</b><br>Test class: saucelabs.Loginfunctions</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.Loginfunctions@6892b3b6</td></tr>
+<tr>
+<td title='saucelabs.filteroption.TC_020()'><b>TC_020</b><br>Test class: saucelabs.filteroption</td>
+<td></td>
+<td>2</td>
+<td>saucelabs.filteroption@2e8c1c9b</td></tr>
+<tr>
+<td title='saucelabs.Loginfunctions.TC_005()'><b>TC_005</b><br>Test class: saucelabs.Loginfunctions</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.Loginfunctions@6892b3b6</td></tr>
+<tr>
+<td title='saucelabs.productpage.TC_014()'><b>TC_014</b><br>Test class: saucelabs.productpage</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.productpage@6e6f2380</td></tr>
+<tr>
+<td title='saucelabs.Socialmedia.TC_031()'><b>TC_031</b><br>Test class: saucelabs.Socialmedia</td>
+<td></td>
+<td>3</td>
+<td>saucelabs.Socialmedia@449a4f23</td></tr>
+<tr>
+<td title='saucelabs.menuoption.TC_027()'><b>TC_027</b><br>Test class: saucelabs.menuoption</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.menuoption@53fe15ff</td></tr>
+<tr>
+<td title='saucelabs.Loginfunctions.TC_004()'><b>TC_004</b><br>Test class: saucelabs.Loginfunctions</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.Loginfunctions@6892b3b6</td></tr>
+<tr>
+<td title='saucelabs.menuoption.TC_024()'><b>TC_024</b><br>Test class: saucelabs.menuoption</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.menuoption@53fe15ff</td></tr>
+<tr>
+<td title='saucelabs.productpage.TC_013()'><b>TC_013</b><br>Test class: saucelabs.productpage</td>
+<td></td>
+<td>5</td>
+<td>saucelabs.productpage@6e6f2380</td></tr>
+<tr>
+<td title='saucelabs.Loginpage.TC_002()'><b>TC_002</b><br>Test class: saucelabs.Loginpage</td>
+<td></td>
+<td>4</td>
+<td>saucelabs.Loginpage@70e9c95d</td></tr>
+<tr>
+<td title='saucelabs.filteroption.TC_022()'><b>TC_022</b><br>Test class: saucelabs.filteroption</td>
+<td></td>
+<td>2</td>
+<td>saucelabs.filteroption@2e8c1c9b</td></tr>
+<tr>
+<td title='saucelabs.Checkoutyourinfo.TC_041()'><b>TC_041</b><br>Test class: saucelabs.Checkoutyourinfo</td>
+<td></td>
+<td>0</td>
+<td>saucelabs.Checkoutyourinfo@5b1669c0</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+  <test thread-count="5" parallel="none" name="Test">
+    <classes>
+    
+   	  <class name="saucelabs.Loginpage" priority="1"/>
+   	  <class name="saucelabs.Loginfunctions" priority="2"/>
+      <class name="saucelabs.productpage" priority="3"/>
+      <class name="saucelabs.productdetailspage" priority="4"/>
+      <class name="saucelabs.filteroption" priority="5"/>
+      <class name="saucelabs.menuoption" priority="6"/>
+      <class name="saucelabs.Socialmedia" priority="7"/>
+      <class name="saucelabs.Yourcart" priority="8"/>
+      <class name="saucelabs.Checkoutyourinfo" priority="9"/>
+      <class name="saucelabs.Overviewpage" priority="10"/>
+      <class name="saucelabs.Completepage" priority="11"/>
+      <class name="saucelabs.Autologoutfunction" priority="12"/>
+       	  
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
